@@ -1,4 +1,4 @@
-NAME = megaphone
+NAME = ex00
 
 CPP = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
