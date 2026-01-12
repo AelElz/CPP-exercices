@@ -3,13 +3,13 @@
 
 int main(int ac, char **av)
 {
-	int	i = 1;
+	int i = 1;
 	int j;
 
-	if (ac == 1)
+	if (ac < 2)
 	{
-		std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *" << std::endl;
-		return (0);
+		std::cout << " * LOUD AND UNBEARABLE FEEDBACK NOISE * " << std::endl;
+		return (1);
 	}
 	while (i < ac)
 	{
@@ -19,8 +19,6 @@ int main(int ac, char **av)
 			std::cout << (char)toupper(av[i][j]);
 			j++;
 		}
-		if (i < ac - 1)
-			std::cout << " ";
 		i++;
 	}
 	std::cout << std::endl;
