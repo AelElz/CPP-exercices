@@ -88,6 +88,13 @@ void	PhoneBook::searchContacts()
 	}
     std::cout << "Enter index to view: ";
     std::cin >> index;
+	if (!(std::cin >> index))
+    {
+        std::cout << "Invalid input" << std::endl;
+        std::cin.clear();
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        return ;
+    }
     std::cin.ignore();
     if (index < 0 || index >= count)
     {
