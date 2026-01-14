@@ -1,4 +1,4 @@
-NAME = replace
+NAME = ex05
 
 CPP = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
