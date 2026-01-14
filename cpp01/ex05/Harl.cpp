@@ -1,6 +1,5 @@
 #include "Harl.hpp"
 
-// private functions
 void Harl::debug(void)
 {
     std::cout << "I love having extra bacon for my 7XL-double-cheese-triple-pickle-specialketchup burger. I really do!" << std::endl;
@@ -20,11 +19,8 @@ void Harl::error(void)
 {
     std::cout << "This is unacceptable! I want to speak to the manager now." << std::endl;
 }
-
-// public function using pointer to member functions
 void Harl::complain(std::string level)
 {
-    // array of member function pointers
     void (Harl::*funcs[4])(void) = {
         &Harl::debug,
         &Harl::info,
@@ -38,9 +34,9 @@ void Harl::complain(std::string level)
     {
         if (levels[i] == level)
         {
-            (this->*funcs[i])(); // call the right function
+            (this->*funcs[i])();
             return;
         }
     }
-    std::cout << "Harl is quiet..." << std::endl; // if level doesn't match
+    std::cout << "Harl is quiet..." << std::endl;
 }
