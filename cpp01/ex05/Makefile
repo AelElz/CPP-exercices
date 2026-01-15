@@ -1,4 +1,4 @@
-NAME = ex05
+NAME = harl
 
 CPP = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98

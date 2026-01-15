@@ -48,6 +48,5 @@ int main(int argc, char **argv)
 		if (!infile.eof())
 			outfile << std::endl;
 	}
-
 	return (0);
 }
