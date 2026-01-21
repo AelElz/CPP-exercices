@@ -18,6 +18,16 @@ ClapTrap::ClapTrap(std::string name)
 	std::cout << "ClapTrap constructor called for " << name << std::endl;
 }
 
+// NEW constructor
+ClapTrap::ClapTrap(std::string name, int hp, int ep, int ad)
+{
+	this->name = name;
+	hitPoints = hp;
+	energyPoints = ep;
+	attackDamage = ad;
+	std::cout << "ClapTrap constructor called for " << name << std::endl;
+}
+
 ClapTrap::ClapTrap(const ClapTrap &other)
 {
 	*this = other;
