@@ -11,7 +11,7 @@ int main()
 	const Animal* dog = new Dog();
 	const Animal* cat = new Cat();
 
-	std::cout << dog->getType() << std::endl;
+	std::cout << dog->getType()  << std::endl;
 	std::cout << cat->getType() << std::endl;
 
 	cat->makeSound();
@@ -26,9 +26,9 @@ int main()
 	const WrongAnimal* wrong = new WrongCat();
 
 	std::cout << wrong->getType() << std::endl;
-	wrong->makeSound(); // calls WrongAnimal sound
+	wrong->makeSound();
 
 	delete wrong;
 
-	return 0;
+	return (0);
 }
